@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos Básicos - Seguridad Informática</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .concepto {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-left: 5px solid #0665b3;
+            display: flex; /* Usar flexbox para alinear elementos */
+            align-items: flex-start; /* Alinea elementos al inicio */
+        }
+        .concepto .texto {
+            flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+        }
+        .concepto img {
+            margin-left: 15px;
+            width: 150px;
+            flex-shrink: 0; /* Evita que la imagen se reduzca */
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <div id="titulo">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Seguridad Informática" id="logo" />
+                <h1>Seguridad Informática</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conceptos.html">Conceptos Básicos</a></li>
+                <li><a href="amenazas.html">Tipos de Amenazas</a></li>
+                <li><a href="prevencion.html">Prevención</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <section>
+            <h2>Conceptos Básicos</h2>
+            <p>La <strong>seguridad informática</strong> se enfoca en proteger la información y los sistemas que la gestionan, asegurando que esta esté disponible solo para usuarios autorizados, sea confiable y esté disponible cuando sea necesario.</p>
+            
+            <div class="concepto">
+                <div class="texto">
+                    <h3>Confidencialidad</h3>
+                    <p>La confidencialidad se refiere a proteger la información para evitar que sea accesible por personas no autorizadas. Esto es fundamental en la protección de datos personales y en entornos empresariales donde la información sensible podría ser utilizada para cometer fraudes.</p>
+                    <p>Los métodos para asegurar la confidencialidad incluyen el cifrado, el uso de contraseñas y la autenticación en dos pasos.</p>
+                </div>
+                <img src="img/confidencialidad.png" alt="Confidencialidad">
+            </div>
+
+            <div class="concepto">
+                <div class="texto">
+                    <h3>Integridad</h3>
+                    <p>La integridad se asegura de que la información no se altere de manera indebida, manteniéndose completa y correcta. Esto incluye proteger la información durante su almacenamiento y su transmisión. Los algoritmos de hash son comúnmente utilizados para verificar la integridad de los datos.</p>
+                </div>
+                <img src="img/integridad.png" alt="Integridad">
+            </div>
+
+            <div class="concepto">
+                <div class="texto">
+                    <h3>Disponibilidad</h3>
+                    <p>La disponibilidad garantiza que los sistemas y la información estén accesibles cuando se necesiten. Esto es crucial para evitar interrupciones en el servicio, las cuales podrían ser causadas por ataques DDoS (Denegación de Servicio), fallos del sistema o desastres naturales.</p>
+                </div>
+                <img src="img/disponibilidad.png" alt="Disponibilidad">
+            </div>
+
+            <div class="concepto">
+                <div class="texto">
+                    <h3>Autenticación y Autorización</h3>
+                    <p>La <strong>autenticación</strong> es el proceso de verificar la identidad de un usuario, generalmente mediante el uso de contraseñas, PINs o biometría (huellas digitales, reconocimiento facial). La autorización es el proceso que determina qué acciones puede realizar un usuario autenticado.</p>
+                    <p>Estos procesos son esenciales para asegurar que solo los usuarios autorizados puedan acceder a recursos específicos en un sistema.</p>
+                </div>
+                <img src="img/autenticacion.png" alt="Autenticación">
+            </div>
+
+            <div class="concepto">
+                <div class="texto">
+                    <h3>Cifrado</h3>
+                    <p>El <strong>cifrado</strong> es una técnica que convierte la información en un formato ilegible para cualquier persona que no tenga la clave adecuada para descifrarla. Esto protege la confidencialidad de la información durante la transmisión, especialmente en redes públicas como Internet.</p>
+                    <p>Existen dos tipos principales de cifrado: el cifrado simétrico, donde se usa la misma clave para cifrar y descifrar, y el cifrado asimétrico, que utiliza un par de claves, una pública y una privada.</p>
+                </div>
+                <img src="img/cifrado.png" alt="Cifrado">
+            </div>
+        </section>
+    </article>
+
+    <footer>
+        <p>&copy; 2024 Seguridad Informática</p>
+    </footer>
+</body>
+</html>
